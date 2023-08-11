@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp2.serviceManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background= "{StaticResource GradientBrush}">
+    <Grid>
+        <StackPanel Margin="2">
+            <Border Background="{StaticResource TransparentBlue}" Margin="10 20" CornerRadius="8" Height="258" Width="256" >
+                <StackPanel Margin="10">
+                    <TextBlock FontSize="16" Foreground="#46487A" FontWeight="Bold" Text="Менеджер 
+                               клиентского сервиса" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Height="57" Width="172"></TextBlock>
+                    <StackPanel Margin="20" Height="124">
+                        <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="12" Content="Услуги" Click="services" Width="150" Height="25"/>
+                        <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="12" Content="Клиенты" Click="client" Width="150" Height="25"/>
+                        <Button Margin="7" Style="{DynamicResource RoundCorner}" Foreground="White" FontSize="12" Content="Выйти" Click="exit" Width="150" Height="25"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

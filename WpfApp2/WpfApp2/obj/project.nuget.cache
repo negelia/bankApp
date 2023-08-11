@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ScV7yS4740ON4ystVBnkyb+97j1ecjGay1Jf9tKyKHS/lPbL1WYxCQPNy2Iq7TV/NCbaAFM6yivS/QkIkfPCGw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\WpfApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ангелина\\.nuget\\packages\\dragablz\\0.0.3.223\\dragablz.0.0.3.223.nupkg.sha512",
+    "C:\\Users\\Ангелина\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

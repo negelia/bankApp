@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataBuh" targetNamespace="http://tempuri.org/dataBuh.xsd" xmlns:mstns="http://tempuri.org/dataBuh.xsd" xmlns="http://tempuri.org/dataBuh.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BankDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BankDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WpfApp2.Properties.Settings.GlobalReference.Default.BankDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="buhViewTableAdapter" GeneratorDataComponentClassName="buhViewTableAdapter" Name="buhView" UserDataComponentName="buhViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BankDBConnectionString (Settings)" DbObjectName="BankDB.dbo.buhView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Credit_Agreement, ID_Statement, ID_Plan, Отчётность, [Дата формирования], Расходы, Доходы FROM dbo.buhView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Credit_Agreement" DataSetColumn="ID_Credit_Agreement" />
+              <Mapping SourceColumn="ID_Statement" DataSetColumn="ID_Statement" />
+              <Mapping SourceColumn="ID_Plan" DataSetColumn="ID_Plan" />
+              <Mapping SourceColumn="Отчётность" DataSetColumn="Отчётность" />
+              <Mapping SourceColumn="Дата формирования" DataSetColumn="Дата формирования" />
+              <Mapping SourceColumn="Расходы" DataSetColumn="Расходы" />
+              <Mapping SourceColumn="Доходы" DataSetColumn="Доходы" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataBuh" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dataBuh" msprop:Generator_DataSetName="dataBuh">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="buhView" msprop:Generator_RowEvHandlerName="buhViewRowChangeEventHandler" msprop:Generator_RowDeletedName="buhViewRowDeleted" msprop:Generator_RowDeletingName="buhViewRowDeleting" msprop:Generator_RowEvArgName="buhViewRowChangeEvent" msprop:Generator_TablePropName="buhView" msprop:Generator_RowChangedName="buhViewRowChanged" msprop:Generator_RowChangingName="buhViewRowChanging" msprop:Generator_TableClassName="buhViewDataTable" msprop:Generator_RowClassName="buhViewRow" msprop:Generator_TableVarName="tablebuhView" msprop:Generator_UserTableName="buhView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Credit_Agreement" msprop:Generator_ColumnPropNameInRow="ID_Credit_Agreement" msprop:Generator_ColumnPropNameInTable="ID_Credit_AgreementColumn" msprop:Generator_ColumnVarNameInTable="columnID_Credit_Agreement" msprop:Generator_UserColumnName="ID_Credit_Agreement" type="xs:int" />
+              <xs:element name="ID_Statement" msprop:Generator_ColumnPropNameInRow="ID_Statement" msprop:Generator_ColumnPropNameInTable="ID_StatementColumn" msprop:Generator_ColumnVarNameInTable="columnID_Statement" msprop:Generator_UserColumnName="ID_Statement" type="xs:int" />
+              <xs:element name="ID_Plan" msprop:Generator_ColumnPropNameInRow="ID_Plan" msprop:Generator_ColumnPropNameInTable="ID_PlanColumn" msprop:Generator_ColumnVarNameInTable="columnID_Plan" msprop:Generator_UserColumnName="ID_Plan" type="xs:int" />
+              <xs:element name="Отчётность" msprop:Generator_ColumnPropNameInRow="Отчётность" msprop:Generator_ColumnPropNameInTable="ОтчётностьColumn" msprop:Generator_ColumnVarNameInTable="columnОтчётность" msprop:Generator_UserColumnName="Отчётность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_формирования" msprop:Generator_ColumnPropNameInRow="Дата_формирования" msprop:Generator_ColumnPropNameInTable="Дата_формированияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_формирования" msprop:Generator_UserColumnName="Дата формирования" type="xs:dateTime" />
+              <xs:element name="Расходы" msprop:Generator_ColumnPropNameInRow="Расходы" msprop:Generator_ColumnPropNameInTable="РасходыColumn" msprop:Generator_ColumnVarNameInTable="columnРасходы" msprop:Generator_UserColumnName="Расходы" type="xs:decimal" />
+              <xs:element name="Доходы" msprop:Generator_ColumnPropNameInRow="Доходы" msprop:Generator_ColumnPropNameInTable="ДоходыColumn" msprop:Generator_ColumnVarNameInTable="columnДоходы" msprop:Generator_UserColumnName="Доходы" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:buhView" />
+      <xs:field xpath="mstns:ID_Credit_Agreement" />
+      <xs:field xpath="mstns:ID_Statement" />
+      <xs:field xpath="mstns:ID_Plan" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

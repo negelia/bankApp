@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\WpfApp2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\WpfApp2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\WpfApp2.csproj",
+        "projectName": "WpfApp2",
+        "projectPath": "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\WpfApp2.csproj",
+        "packagesPath": "C:\\Users\\Ангелина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ангелина\\OneDrive\\Рабочий стол\\практика 14.02.22\\WpfApp2\\WpfApp2\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Ангелина\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Dragablz": {
+              "target": "Package",
+              "version": "[0.0.3.223, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

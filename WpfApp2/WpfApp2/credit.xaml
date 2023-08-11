@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp2.credit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Loaded="Window_Loaded" Height="630" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background= "{StaticResource GradientBrush}">
+    <Grid>
+        <DataGrid Background="GhostWhite" Name="dataCredit" Margin="344,0,0,0" BorderBrush="White" BorderThickness="3" SelectionChanged="dataCredit_SelectionChanged" CanUserSortColumns="True"/>
+        <StackPanel Margin="32,64,588,227">
+            <TextBox Name="title" Text="Наименование кредитного договора" Foreground="#FFFFA082" Template="{StaticResource textbox}" FontWeight="Bold" Height="25"></TextBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorTitle" Height="25"/>
+            <TextBox Name="price" Text="Сумма кредита" Foreground="#FFFFA082" Template="{StaticResource textbox}" FontWeight="Bold" Height="25"></TextBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorPrice" Height="25"/>
+            <Label Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" FontSize="10" Content="Дата формирования договора" Width="177"/>
+            <DatePicker Margin="2" Name="dateCredit" DisplayDateStart="2022/01/01"></DatePicker>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorDateCredit" Height="25"/>
+            <Label Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" FontSize="10" Content="Фамилия клиента" Width="177"/>
+            <ComboBox Margin="2" Name="ClientCB" Foreground="#FFFFA082" FontWeight="Bold"></ComboBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorClient" Height="25"/>
+            <Label Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" FontSize="10" Content="Фамилия сотрудника" Width="177"/>
+            <ComboBox Margin="2" Name="EmployeeCB" Foreground="#FFFFA082" FontWeight="Bold"></ComboBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorEmployee" Height="25"/>
+        </StackPanel>
+        <StackPanel Margin="38,396,594,122">
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Добавить" Click="add" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Обновить" Click="update" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Удалить" Click="delete" Width="100" Height="25"/>
+        </StackPanel>
+        <StackPanel Margin="99,520,655,30">
+            <Button Margin="7" Style="{DynamicResource RoundCorner}" Foreground="White" FontSize="10" Content="Экспорт" Click="export" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner}" Foreground="White" FontSize="10" Content="Назад" Click="exit" Width="100" Height="25"/>
+        </StackPanel>
+    </Grid>
+</Window>

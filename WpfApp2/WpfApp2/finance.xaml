@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp2.finance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Loaded="Window_Loaded" Height="630" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background= "{StaticResource GradientBrush}">
+    <Grid>
+        <DataGrid Background="GhostWhite" Name="dataFinance" Margin="344,0,0,0" BorderBrush="White" BorderThickness="3" SelectionChanged="dataFinance_SelectionChanged" CanUserSortColumns="True"/>
+        <StackPanel Margin="32,92,588,307">
+            <TextBox Margin="2"  Name="title" Text="Наименование финансового плана" Foreground="#FFFFA082" Template="{StaticResource textbox}" FontWeight="Bold" Height="23"></TextBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorTitle" Height="23"/>
+            <TextBox Margin="2"  Name="price" Text="Сумма" Foreground="#FFFFA082" Template="{StaticResource textbox}" FontWeight="Bold" Height="23"></TextBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorPrice" Height="23"/>
+            <Label Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" FontSize="10" Content="Функция для реализации" Width="177"/>
+            <ComboBox Margin="2" Name="FunctionCB" Foreground="#FFFFA082" FontWeight="Bold"></ComboBox>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorFunction" Height="23"/>
+            <Label Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" FontSize="10" Content="Дата внедрения функции" Width="177"/>
+            <DatePicker Margin="2" Name="date" DisplayDateStart="2022/01/01"></DatePicker>
+            <Label Foreground="#FFFF3C00" FontSize="10" x:Name="errorDate" Height="23"/>
+        </StackPanel>
+        <StackPanel Margin="38,342,594,176">
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Добавить" Click="add" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Обновить" Click="update" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner1}" Foreground="White" FontSize="10" Content="Удалить" Click="delete" Width="100" Height="25"/>
+        </StackPanel>
+        <StackPanel Margin="99,484,655,66">
+            <Button Margin="7" Style="{DynamicResource RoundCorner}" Foreground="White" FontSize="10" Content="Экспорт" Click="export" Width="100" Height="25"/>
+            <Button Margin="7" Style="{DynamicResource RoundCorner}" Foreground="White" FontSize="10" Content="Назад" Click="exit" Width="100" Height="25"/>
+        </StackPanel>
+    </Grid>
+</Window>
